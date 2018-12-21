@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projeto de PG 2</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="nadadeles.css"> 
+  </head>
+  <body>
+      <div class = topo>
+        <div class="titulo">
+          Projeto de PG 2 - Derivadas (ham2 e gacm)
+        </div>
+        <div class="topoDireita">
+          <div class="menu">            
+            <ul>
+              <li onclick="comCurvachange1()" > Desabilitar Pontos </li>
+              <li onclick="comCurvachange2()" > Desabilitar Poligonal </li>
+              <li onclick="comCurvachange3()" > Desabilitar Curva </li>
+            </ul>          
+          </div>
+          <div class="inputClass"> 
+            <div>
+              <a class="inputTittle">Digite um número</a>
+            </div>
+            <div class="inputBox">
+              <input id="num_avaliacoes" placeholder="Numero de avaliações" type="text" class="inputTxt"> <label for="last_name"></label> 
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="canvasClass">
+        <div class="class1">
+            <div class="titulo1">
+            </div>
+            <div class="c1">
+              <canvas id="canvs" tabindex="1" style="width:50%;
+                                            height: 50%;
+                                            top:0%;
+                                            left: 0%;
+                                            position: absolute;                                
+                                            display: flex;
+                                            border:10px solid #000000;
+                                            background-color: pink;" >
+              </canvas>
+            </div>   
+        </div>
+        <div class="class2">
+          <div class="titulo2">
+          </div>
+          <div classe="c2">           
+            <canvas id="canvs2" style="width:50%;
+                                        height: 50%;
+                                        position: absolute;
+                                        display: flex;
+                                        top: 0%;
+                                        right: 0%;
+                                        border:10px solid #000000;
+                                        background-color: aqua;">
+            </canvas>
+          </div>
+        </div>
+        <div class="class3">
+            <div class="titulo3">
+            </div>
+            <div class="c3">            
+              <canvas id="canvs3" 
+                      style="
+                              position: absolute;
+                              width:50%;
+                              height: 50%;
+                              display: flex;
+                              bottom:0%;
+                              left: 0%; 
+                              border:10px solid #000000;
+                              background-color: rebeccapurple;">
+              </canvas>
+            </div>
+        </div>
+        <div class="class4">
+          <div class="titulo4">
+          </div>
+          <div class="c4">
+            <canvas id="canvs4" 
+                    style="width:50%;
+                            height: 50%;
+                            position: absolute;
+                            display: flex;
+                            right:0%;
+                            bottom: 0%;
+                            border:10px solid #000000;
+                            background-color: blanchedalmond;">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+  <script src="tudonosso.js"></script>
+</html>
